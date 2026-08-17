@@ -25,7 +25,6 @@ Yahoo Finance API  →  CSV file  →  Feature engineering  →  Signals  →  C
 Work through the parts in order.  Each part has a **Task** telling you exactly
 what function to write and what signature it must have.
 
-> `data_fetcher_requests.py` is provided as a **reference** — study it, but write your own code in `data_fetcher.py`.
 
 ---
 
@@ -82,7 +81,6 @@ project/
 ├── plotter.py # drawing logic will be here
 └── requirements.txt
 ```
-
 
 ---
 
@@ -250,6 +248,9 @@ The numbers in the `timestamp` list look like `1672531200`. These are not dates 
 Python's standard library `datetime` module knows how to convert these numbers into human-readable dates. You will need `datetime.fromtimestamp()` to get a datetime object, and then `.strftime()` to format it as a string. Look up both in the Python documentation.
 
 Store both: the raw integer (for future sorting and arithmetic) and the formatted string (for readability and CSV column headers).
+
+How to convert the two
+https://stackoverflow.com/questions/3682748/converting-unix-timestamp-string-to-readable-date
 
 ---
 
